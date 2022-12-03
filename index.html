@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Calculator | Addition | Subtraction | Multiplication | Division</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://allfont.net/allfont.css?fonts=digital-7-mono" rel="stylesheet" type="text/css" />     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav" id="home">
+        <div class="menu" onclick="myFunction(this)">
+            <div class="container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+            </ul>
+        </div>
+            <div class="logo">
+                <a href="calculator.html">
+                    <h1>
+                        Mr.Math Calculator
+                    </h1>
+                  </a>
+            </div>
+        
+    </div><br>
+    <h2>Calculator</h2><br>
+      <p style="color:black; margin-right: 100px;">This article is about the electronic device. For mechanical precursors to the modern calculator, see mechanical calculator. For other uses, see Calculator (disambiguation).
+
+        An electronic calculator is typically a portable electronic device used to perform calculations, ranging from basic arithmetic to complex mathematics.      
+    </p><br><br>
+
+    <div style="margin: 0px 130px;">
+        <p style="color:black; text-align:justify;">
+            The first solid-state electronic calculator was created in the early 1960s. Pocket-sized devices became available in the 1970s, especially after the Intel 4004, the first microprocessor, was developed by Intel for the Japanese calculator company Busicom. <br><br>
+
+            Modern electronic calculators vary from cheap, give-away, credit-card-sized models to sturdy desktop models with built-in printers. They became popular in the mid-1970s as the incorporation of integrated circuits reduced their size and cost. By the end of that decade, prices had dropped to the point where a basic calculator was affordable to most and they became common in schools. <br><br>
+
+            Computer operating systems as far back as early Unix have included interactive calculator programs such as dc and hoc, and interactive BASIC could be used to do calculations on most 1970s and 1980s home computers. Calculator functions are included in most personal digital assistant (PDA) type devices. <br><br>
+
+            In addition to general purpose calculators, there are those designed for specific markets. For example, there are scientific calculators which include trigonometric and statistical calculations. Some calculators even have the ability to do computer algebra. Graphing calculators can be used to graph functions defined on the real line, or higher-dimensional Euclidean space. As of 2016, basic calculators cost little, but scientific and graphing models tend to cost more.
+        </p><br><br><br><br>
+
+    </div>
+    <center id="calculator">
+        <div class="calculator">
+            <div class="top">
+                 <div class="result">
+                     <div style="display: inline;">
+                         <input type="text" id="output-screen" class="calc-input" placeholder="0" disabled>     
+                     </div>           
+                     <div style="display: inline; color: black;">
+                         <span style="display: inline; color: black;">Mr.Math<sup style="display: inline; color: black;">@</sup></span>
+                     </div>  
+                 </div> 
+                 <span>Math specialist</span>
+                 
+                 <hr>
+            </div>    
+             
+             <table style="margin-top:10px;">
+                 <tr>
+                     <td>                    
+                         <button type="button" id="bracket1"  onclick="display('(')">(</button><br>
+                         <button type="button" id="bracket2"  onclick="display(')')">)</button><br>
+                         <button type="button" id="bks"  onclick="del()"><i class="material-icons">backspace</i></button><br>
+                         <button type="button" id="ac"  onclick="allClear()">AC</button>
+                     </td>
+                     <!-- numbers start here -->
+                     <td>
+                         <div class="button-group">
+                             <button type="button" id="seven"   onclick="display('7')">7</button>
+                             <button type="button" id="eight" onclick="display('8')">8</button>
+                             <button type="button" id="nine"  onclick="display('9')">9</button><br>      
+                             <button type="button" id="four"  onclick="display('4')">4</button>
+                             <button type="button" id="five"  onclick="display('5')">5</button>
+                             <button type="button" id="six"  onclick="display('6')">6</button><br>
+                             <button type="button" id="one"  onclick="display('1')">1</button>
+                             <button type="button" id="two"  onclick="display('2')">2</button>
+                             <button type="button" id="three"  onclick="display('3')">3</button><br>       
+                             <button type="button" id="zero1"  onclick="display('0')">0</button>
+                             <button type="button" id="zero2"  onclick="display('00')">00</button>
+                             <button type="button" id="dot"  onclick="display('.')">.</button>
+                         </div>
+                     </td>
+                     <!-- numbers end here -->
+                     <td class="tools">
+                             <button type="button" id="divide"  onclick="display('/')">/</button>
+                             <button type="button"  id="oper" onclick="display('3.14')">&pi;</button><br>
+                             <button type="button" id="mul"   onclick="display('*')">*</button>
+                             <button type="button" id="sub1"   onclick="display('-')">-</button></br>
+                         <div style="height: 120px; float: left;">
+                             <button type="button" id="add"  style="height:107px;"onclick="display('+')">+</button>
+                         </div>
+                         <div style="float: left;">
+                             <button type="button" id="mod"  style="float:right;" onclick="display('%')">%</button></br>
+                             <button type="button" id="equal"  style="float: right;" onclick="calculate()">=</button></br>
+                         </div>
+                     </td>
+                 </tr>
+             </table>
+             
+         </div>
+    </center>
+    <br><br>
+    <div style="margin: 0px 130px;" id="aboutUs">
+        <h2>About Us</h2><br><br>
+        <p style="color:black">
+            The Mr.Math Group is a fellowship of companies headquartered in the land of Legends and Lions, Gujarat, India. Our 50 years of legacy has enabled us to create a strong presence all over India and globally too.
+            <br><br>
+            In 1962, however, a manufacturer in the U.K. announced the world's first electronic desktop calculator. Japanese manufacturers then began developing electronic calculators in 1964, and the technology started to gain attention
+        </p>
+    </div><br><br>
+        <div style="margin: 0px 130px;" id="contactUs">
+            <h2>Contact Us</h2><br>
+            <center>                
+            <label style="color:black;"> Name</label><br><input type="text" placeholder="Enter Your Name"><br>
+            <label style="color:black;"> Email</label><br><input type="email"  placeholder="Enter Your Email"><br>
+            <label style="color: black;">Message</label><br>
+            <textarea name="" id="" cols="30" rows="10" ></textarea><br>
+            <input type="submit" value="Send">
+            </center>
+        </div>
+    <br><br>
+    <footer>
+        <center>
+            <table>
+                <td> <a href="#home">Home</a></td>
+                <td> <a href="#calculator">Calculator</a></td>
+                <td> <a href="#aboutUs">About Us</a></td>                
+                <td> <a href="#contactUs">Contact Us</a></td>
+            </table>
+        </center>
+    </footer>
+    <script>
+        let outputScreen = document.getElementById('output-screen');
+        let btn = document.getElementsByTagName('BUTTON');
+        function myFunction(x) {
+            x.classList.toggle("change");
+            }
+                function display(num){
+                outputScreen.value += num;
+                }
+                function allClear(){
+                    outputScreen.value = "";
+                }
+                function del(){
+                    outputScreen.value = outputScreen.value.slice(0, -1);
+                }
+                function calculate(){
+                    try{
+                        outputScreen.value = eval(outputScreen.value);
+
+                    }
+                    catch(err){
+                        alert("You are entered Invalid Input.");
+                    }
+                }
+    </script>
+  </body>
+</html>

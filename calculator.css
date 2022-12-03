@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Orbitron:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+    font-weight: bold;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color: #F1F3F4;
+}
+a ,h1{
+    color: black;    
+    font-family: 'Digital-7 Mono', arial;
+}
+h2{
+    color: black;
+}
+.calculator{
+    display: inline-block;
+    padding: 30px;
+    border-radius: 20px;
+    border: solid 5px white;
+    background-color: #272727;
+    justify-content: center;
+    align-items: center;
+  
+}
+button{
+    width: 50px;
+    height: 40px;
+    color:white;
+    font-size: 22px;
+    margin: 20px 6px 0px 6px;
+    box-shadow: 3px 3px 0px 2px black;
+    background-color: #272727;
+    margin: 10px 13px 15px 14px ;
+    cursor: pointer;
+}
+.calc-input{
+    background-color: #BEF0A7;
+    color: black;
+    height: 70px;
+    width: 400px;
+    font-size: 65px;
+    text-align: end;
+    font-family: 'Digital-7 Mono', arial;
+}
+.result{
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 3px white;
+    background-color: #E3EBEE;
+}
+
+table, td{
+    border: 2px solid black;
+}
+.top{
+    background-color: black;
+    width: 500px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.btn-combo{
+    float: left;
+}
+.logo{
+    padding: 20px;
+    display: block;
+    background-color: black;
+}
+.logo a{
+    color: white;
+}
+.logo a h1{
+    display: inline-block;
+    color: white;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.menu{
+    float: left;
+    margin: 20px 50px 10px 50px;
+}
+.change .bar1 {
+  transform: translate(0, 10px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
+ul{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-left: -250px;
+    transition: 0.5s;
+}
+ul li{
+    margin-top: 30px;
+}
+ul li:first-child{
+    margin-top: 10px;
+}
+
+ul li a{
+    color: white;
+}
+.change ul{
+    transform: translate(200px, 0px);
+}
+.nav{
+    position: sticky;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 110px;
+}
+footer td{
+    padding: 40px;
+    border: none;
+}
+footer table {
+    border: none;
+}
+footer td a{
+    color:white;
+}
+input{
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    color: black;
+}
+textarea{
+    width: 300px;
+    margin: 30px;
+    color: black;
+}
